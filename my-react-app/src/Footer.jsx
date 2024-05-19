@@ -2,8 +2,8 @@
 function Footer(){
 
     return(
-        <footer>
-            <p>&copy; {new Date().getFullYear()} Your Website Name</p>
+        <footer className="">
+            <p>&copy; {new Date().getFullYear()} React Site </p>
         </footer>
     );
 }
