@@ -1,7 +1,8 @@
-import profilePic from './assets/myProfilePic.png'
+import profilePic from './assets/myProfilePic.png'  
 
 
 function Card(){
+    let name = 'umair gosal'
 
     return(
         <div className="card">
