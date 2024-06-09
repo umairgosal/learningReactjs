@@ -2,7 +2,7 @@
 function Footer(){
 
     return(
-        <footer className="">
+        <footer className="bg-gray-800">
             <p>&copy; {new Date().getFullYear()} React Site </p>
         </footer>
     );
