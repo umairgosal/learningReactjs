@@ -4,6 +4,7 @@ import Footer from './Footer'
 import Food from './Food'
 import EventHandling from './EventHandling';
 import CardList from './CardList';
+import Counter from './Counter';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
     <CardList></CardList>
     <EventHandling />
     <Food name="spongebob" age={30} items={vegetables}></Food>
+    <Counter />
     <Footer></Footer>
     </>
   );
