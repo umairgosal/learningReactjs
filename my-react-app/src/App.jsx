@@ -5,9 +5,13 @@ import Food from './Food'
 import EventHandling from './EventHandling';
 import CardList from './CardList';
 import Counter from './Counter';
+import Routing from './Routing';
+import Navbar from './Navbar';
+import store from './Store/store'
+import { Provider } from 'react-redux';
+
 
 function App() {
-
   const vegetables = [
     {id:6, name:"carrot", calorie:35},
     {id:7, name:"spinach", calorie:40},
@@ -16,14 +20,16 @@ function App() {
   ];
 
   return(
-    <>
-    <Header></Header>
+    <Provider store={store}>
+    {
+    /*
     <CardList></CardList>
-    <EventHandling />
-    <Food name="spongebob" age={30} items={vegetables}></Food>
+    <EventHandling /> */}
+    <Routing />
+    {/* <Food name="spongebob" age={30} items={vegetables}></Food>
     <Counter />
-    <Footer></Footer>
-    </>
+    <Footer></Footer> */}
+    </Provider>
   );
 }
 
