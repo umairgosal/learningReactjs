@@ -1,4 +1,4 @@
-import profilePic from './assets/myProfilePic.png'  
+import profilePic from '../assets/myProfilePic.png'  
 
 
 function Card(){
@@ -13,4 +13,4 @@ function Card(){
     );
 }
 
-export default Card
+export default Card 

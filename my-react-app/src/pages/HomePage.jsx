@@ -1,5 +1,5 @@
-import Navbar from "../Navbar"
-import CardList from "../CardList"
+import Navbar from "../components/Navbar"
+import CardList from "../components/CardList"
 import { Outlet } from "react-router-dom";
 
 function HomePage(){

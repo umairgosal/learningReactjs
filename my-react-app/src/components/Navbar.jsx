@@ -1,4 +1,4 @@
-import { Fragment } from 'react'
+import { Fragment } from "react";
 import {
   Disclosure,
   DisclosureButton,
@@ -8,19 +8,19 @@ import {
   MenuItem,
   MenuItems,
   Transition,
-} from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
-import { Navigate, Link } from 'react-router-dom'
+} from "@headlessui/react";
+import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Navigate, Link } from "react-router-dom";
 
 const navigation = [
-  { name: 'Home', link: '/home', current: true },
-  { name: 'About', link: '/about', current: false },
-  { name: 'Services', link: '/services', current: false },
-  { name: 'counter', link: '/counter', current: false },
-]
+  { name: "Home", link: "/home", current: true },
+  { name: "About", link: "/about", current: false },
+  { name: "Services", link: "/services", current: false },
+  { name: "counter", link: "/home/counter", current: false },
+];
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ");
 }
 
 export default function Example() {
@@ -43,8 +43,8 @@ export default function Example() {
                 </DisclosureButton>
               </div>
               <div className="flex flex-1 items-center">
-                <div className='flex justify-start'>
-                  <h1 className='text-gray-300 hover:bg-gray-700 hover:text-white justify-items-start'>
+                <div className="flex justify-start">
+                  <h1 className="text-gray-300 hover:bg-gray-700 hover:text-white justify-items-start">
                     My Website
                   </h1>
                 </div>
@@ -58,16 +58,8 @@ export default function Example() {
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
-                      <Link
-                        key={item.name} 
-                        to={item.link}
-                        className={classNames(
-                          item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                          'rounded-md px-3 py-2 text-sm font-medium'
-                        )}
-                        aria-current={item.current ? 'page' : undefined}
-                      >
-                        {item.name}
+                      <Link key={item.name} to={item.link} className={classNames(item.current? "bg-gray-900 text-white": "text-gray-300 hover:bg-gray-700 hover:text-white","rounded-md px-3 py-2 text-sm font-medium")} aria-current={item.current ? "page" : undefined}>
+                        {item.name} 
                       </Link>
                     ))}
                   </div>
@@ -109,7 +101,10 @@ export default function Example() {
                         {({ focus }) => (
                           <a
                             href="#"
-                            className={classNames(focus ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
+                            className={classNames(
+                              focus ? "bg-gray-100" : "",
+                              "block px-4 py-2 text-sm text-gray-700"
+                            )}
                           >
                             Your Profile
                           </a>
@@ -119,7 +114,10 @@ export default function Example() {
                         {({ focus }) => (
                           <a
                             href="#"
-                            className={classNames(focus ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
+                            className={classNames(
+                              focus ? "bg-gray-100" : "",
+                              "block px-4 py-2 text-sm text-gray-700"
+                            )}
                           >
                             Settings
                           </a>
@@ -129,7 +127,10 @@ export default function Example() {
                         {({ focus }) => (
                           <a
                             href="#"
-                            className={classNames(focus ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
+                            className={classNames(
+                              focus ? "bg-gray-100" : "",
+                              "block px-4 py-2 text-sm text-gray-700"
+                            )}
                           >
                             Sign out
                           </a>
@@ -150,10 +151,12 @@ export default function Example() {
                   as="a"
                   href={item.href}
                   className={classNames(
-                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                    'block rounded-md px-3 py-2 text-base font-medium'
+                    item.current
+                      ? "bg-gray-900 text-white"
+                      : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                    "block rounded-md px-3 py-2 text-base font-medium"
                   )}
-                  aria-current={item.current ? 'page' : undefined}
+                  aria-current={item.current ? "page" : undefined}
                 >
                   {item.name}
                 </DisclosureButton>
@@ -163,5 +166,5 @@ export default function Example() {
         </>
       )}
     </Disclosure>
-  )
+  );
 }

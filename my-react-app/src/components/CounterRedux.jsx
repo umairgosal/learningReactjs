@@ -7,15 +7,15 @@ export default function CounterRedux() {
     const dispatch = useDispatch()
 
     return(
-        <div>
+        <div className="card">
             <span>{count}</span><br />
-            <button onClick={()=> dispatch(increment())}>
+            <button className="btn btn-primary" onClick={()=> dispatch(increment())}>
                 Increment
             </button>
-            <button onClick={()=> dispatch(decrement())}>
+            <button className="btn btn-primary" onClick={()=> dispatch(decrement())}>
                 Decrement
             </button>
-            <button onClick={()=> dispatch(multiplyBy2())}>
+            <button className="btn btn-primary" onClick={()=> dispatch(multiplyBy2())}>
                 multiplyBy2
             </button>
         </div>

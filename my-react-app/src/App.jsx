@@ -1,12 +1,12 @@
-import Header from './Header'
-import Card from './Card'
-import Footer from './Footer'
-import Food from './Food'
-import EventHandling from './EventHandling';
-import CardList from './CardList';
-import Counter from './Counter';
+import Header from './components/Header'
+import Card from './components/Card'
+import Footer from './components/Footer'
+import Food from './components/Food'
+import EventHandling from './components/EventHandling';
+import CardList from './components/CardList';
+import Counter from './components/Counter';
 import Routing from './Routing';
-import Navbar from './Navbar';
+import Navbar from './components/Navbar';
 import store from './Store/store'
 import { Provider } from 'react-redux';
 
