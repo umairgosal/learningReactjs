@@ -5,9 +5,7 @@ import { Outlet } from "react-router-dom";
 function ServicesPage(){
     return(
         <>
-        <h1>This is the Services page</h1>
-        {/* <ColorPicker /> */}
-        <Footer></Footer>
+        <ColorPicker />
         <Outlet></Outlet>
         </>
     );

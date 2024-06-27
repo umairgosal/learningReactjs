@@ -11,9 +11,10 @@ import {
 } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Navigate, Link } from "react-router-dom";
+import profilePic from "../assets/myProfilePic.png"
 
 const navigation = [
-  { name: "Home", link: "/home", current: true },
+{ name: "Home", link: "/", current: true },
   { name: "About", link: "/about", current: false },
   { name: "Services", link: "/services", current: false },
   { name: "counter", link: "/home/counter", current: false },
@@ -25,7 +26,7 @@ function classNames(...classes) {
 
 export default function Example() {
   return (
-    <Disclosure as="nav" className="bg-gray-800">
+    <Disclosure as="nav" className="bg-emerald-950">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -58,7 +59,7 @@ export default function Example() {
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
-                      <Link key={item.name} to={item.link} className={classNames(item.current? "bg-gray-900 text-white": "text-gray-300 hover:bg-gray-700 hover:text-white","rounded-md px-3 py-2 text-sm font-medium")} aria-current={item.current ? "page" : undefined}>
+                      <Link key={item.name} to={item.link} className={classNames(item.current? "bg-emerald-800 text-white": "text-gray-300 hover:bg-emerald-900 hover:text-white","rounded-md px-3 py-2 text-sm font-medium")} aria-current={item.current ? "page" : undefined}>
                         {item.name} 
                       </Link>
                     ))}
@@ -82,8 +83,9 @@ export default function Example() {
                       <span className="absolute -inset-1.5" />
                       <span className="sr-only">Open user menu</span>
                       <img
-                        className="h-8 w-8 rounded-full"
-                        src="./assets/myProfilePic.png"
+                        className="ring-primary ring-offset-base-100 w-10 rounded-full ring ring-offset-2"
+                        // src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+                        src={profilePic}
                         alt=""
                       />
                     </MenuButton>

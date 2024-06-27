@@ -9,7 +9,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #c8b7b7;
+  background-color: #65c9ba;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -72,7 +72,7 @@ button:focus-visible {
 }
 
 .card{
-  border: 1px solid hsla(0, 23%, 94%, 0.51);
+  border: 2px solid hsla(158, 90%, 4%, 0.51);
   border-radius: 10px;
   padding: 20px;
   margin: 10px;

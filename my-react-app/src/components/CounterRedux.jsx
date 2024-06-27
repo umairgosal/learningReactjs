@@ -7,8 +7,8 @@ export default function CounterRedux() {
     const dispatch = useDispatch()
 
     return(
-        <div className="card">
-            <span>{count}</span><br />
+        <div className="text-center max-w-max p-6 bg-white border border-gray-200 rounded-2xl m-5 shadow-md dark:bg-emerald-800 dark:border-gray-700">
+            <span className="text-4xl">{count}</span><br />
             <button className="btn btn-primary" onClick={()=> dispatch(increment())}>
                 Increment
             </button>

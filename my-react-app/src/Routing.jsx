@@ -16,11 +16,10 @@ function Routing(){
         <BrowserRouter>
         <Routes>
             <Route path="/" element={<HomePage /> }>
-                <Route path="home" element={<HomePage />}>
-                    <Route path="/home/counter" element={<CounterRedux />} />
-                </Route>
+                <Route path="home" element={<HomePage />} />
                 <Route path="services" element={<ServicesPage />} />
                 <Route path="about" element={<AboutPage />} />
+                <Route path="/home/counter" element={<CounterRedux />} />
 
                 {/* so here ive added nested routing. for it we need to add the path within proper tag closing */}
             </Route>
